@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Personal academic website for sharing research, publications, teaching, and selected projects."
+    />
+    <title>Cici Xue | Academic Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Home">Cici Xue</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">PhD Student / Researcher / Economics</p>
+          <h1>Cici Xue</h1>
+          <p class="intro">
+            I study concise description of your research area, with a focus on
+            the central problems, methods, and communities you care about.
+          </p>
+          <div class="hero-actions" aria-label="Primary links">
+            <a class="button primary" href="#publications">View Publications</a>
+            <a class="button secondary" href="mailto:your.email@example.com">Email</a>
+          </div>
+          <dl class="quick-facts" aria-label="Profile summary">
+            <div>
+              <dt>Affiliation</dt>
+              <dd>Your University</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>City, Country</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Topic A, Topic B</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero-visual" aria-label="Research network visualization">
+          <canvas id="research-canvas" width="720" height="560"></canvas>
+          <div class="portrait-placeholder" aria-label="Portrait placeholder">
+            <span>Cici</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">Research Identity</h2>
+        </div>
+        <p>
+          Write a short academic bio here: your current role, advisor or lab,
+          research interests, and the kind of questions that motivate your
+          work. Keep it concrete and easy to scan.
+        </p>
+      </section>
+
+      <section class="section two-column" id="research" aria-labelledby="research-title">
+        <div class="section-heading">
+          <p class="eyebrow">Research</p>
+          <h2 id="research-title">Current Directions</h2>
+        </div>
+        <div class="topic-grid">
+          <article class="topic-card">
+            <span class="topic-marker"></span>
+            <h3>Research Theme One</h3>
+            <p>
+              A crisp explanation of the theme, why it matters, and the methods
+              you use to study it.
+            </p>
+          </article>
+          <article class="topic-card">
+            <span class="topic-marker green"></span>
+            <h3>Research Theme Two</h3>
+            <p>
+              A second area of work. Mention datasets, theory, experiments, or
+              field sites if they are central.
+            </p>
+          </article>
+          <article class="topic-card">
+            <span class="topic-marker gold"></span>
+            <h3>Research Theme Three</h3>
+            <p>
+              A forward-looking theme that can host works in progress and
+              collaborations.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="publications" aria-labelledby="publications-title">
+        <div class="section-heading row-heading">
+          <div>
+            <p class="eyebrow">Publications</p>
+            <h2 id="publications-title">Selected Work</h2>
+          </div>
+          <a class="text-link" href="#">Google Scholar</a>
+        </div>
+        <div class="publication-list">
+          <article class="publication">
+            <p class="pub-year">2026</p>
+            <div>
+              <h3>Paper Title Goes Here</h3>
+              <p class="authors">Your Name, Coauthor One, Coauthor Two</p>
+              <p class="venue">Conference or Journal Name</p>
+              <div class="pub-links">
+                <a href="#">PDF</a>
+                <a href="#">Code</a>
+                <a href="#">BibTeX</a>
+              </div>
+            </div>
+          </article>
+          <article class="publication">
+            <p class="pub-year">2025</p>
+            <div>
+              <h3>Another Paper Title</h3>
+              <p class="authors">Your Name and Collaborator Name</p>
+              <p class="venue">Workshop, Preprint, or Journal</p>
+              <div class="pub-links">
+                <a href="#">PDF</a>
+                <a href="#">Project</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">Research Tools & Notes</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-type">Tool</p>
+            <h3>Project Name</h3>
+            <p>A short description of a dataset, software tool, demo, or research note.</p>
+          </article>
+          <article class="project-card">
+            <p class="project-type">Dataset</p>
+            <h3>Project Name</h3>
+            <p>Describe what someone can learn, reproduce, or reuse from this work.</p>
+          </article>
+          <article class="project-card">
+            <p class="project-type">Writing</p>
+            <h3>Project Name</h3>
+            <p>A place for essays, reading lists, or explainers connected to your field.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section two-column" id="teaching" aria-labelledby="teaching-title">
+        <div class="section-heading">
+          <p class="eyebrow">Teaching</p>
+          <h2 id="teaching-title">Courses & Mentoring</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <p>Spring 2026</p>
+            <h3>Course or Teaching Assistant Role</h3>
+            <span>Your University</span>
+          </article>
+          <article>
+            <p>Fall 2025</p>
+            <h3>Workshop, Seminar, or Mentoring Program</h3>
+            <span>Lab / Department</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <div class="contact-title-row">
+            <h2 id="contact-title">Let's Connect</h2>
+            <figure class="meme-easter-egg" aria-label="A small hidden meme">
+              <img src="assets/cat-meme.png" alt="Cat meme with the text Dude. No." />
+            </figure>
+          </div>
+          <p>
+            For collaboration, talks, or research questions, reach me by email
+            or through academic profiles.
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:your.email@example.com">Email</a>
+          <a href="#">Google Scholar</a>
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Copyright <span id="year"></span> Your Name. Built with care.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
